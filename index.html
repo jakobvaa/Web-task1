@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Artist</title>
+     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body onLoad = "draw();" style = "background-color:yellow">
+    <div class = "grid-container">
+      <div class = "grid-item-a"><!--Overskrift -->
+        <h1 style = "color:yellow" class = "header">JASUS GUDESEN</h1>
+      </div>
+      <div class = "grid-item-b nice-border">
+        <h2 class = "white">Godlike Artist</h1>
+        <p class ="white para">
+          Jasus Gudesen, also known as Norway's Great Son, is a legend in the HTML5 Canvas environment. His works have been shown at, among others, the Great Art Museum,
+          Edvard Grieg Kunstmuseum and the very big art show in Oslo. Below you can see his most famous artworks, "Flexible Square Boxes" and "Geometry on Canvas".
+        </p>
+      </div>
+      <div class = "grid-item-c">
+        <div class = "flex-container container1">
+          <div class ="flex-item">
+          </div>
+          <div class ="flex-item">
+          </div>
+          <div class ="flex-item">
+          </div>
+        </div>
+      </div>
+      <div class = "grid-item-d yellow">
+        <canvas id = "canvas" width ="500px" height ="500px">
+        </canvas>
+      </div>
+      <div class = "grid-item-e">
+        <div class = "flex-container container2">
+          <button id = "clicky" class = "flex-item2" style = "border:solid">Documentation </button>
+          <div id = "documentation" class = "flex-item2 special nice-border">
+            <h2>Flexbox og CSS-Grid</h1>
+            <p>
+              Flexbox og CSS-Grid er gode metode for å strukturere plasseringen til HTML elementer på en nettside. Denne layout modellen blir sett på som en erstatning for positioning og floats.
+              Ved hjelp av "layout modellene" kan man enkelt bestemme hvor elementene skal plasseres og avstanden mellom de.
+              Flexbox er en-dimensjonal, det vil si at alle elementer går i samme retning.
+              Retningen er "main axis" til flex-containeren. Elementene som ligger langs denne aksen kan vokse for å ta opp ubrukt plass eller krympe, og mye mer!
+              Disse elementene som ligger i flex-containeren blir kalt flex-items.
+              <br>
+              CSS-Grid er en layout modell som kan brukes for å strukturere HTML elementene i to-dimensjoner. Dette gjør det enkelt å lage komplekse strukturer på nettsiden din.
+              <br><br>
+              På denne nettsiden valgte eg å bruke CSS-Grid. Dette gjorde eg fordi det gir meg muligheten til å enkelt lage komplekse strukturer av elementene på nettsiden.
+              Kunne nok brukt flexbox også på denne nettsiden, men CSS Grid sine muligheter gjorde det fristande å lære.
+              Brukte også Flexbox i det blå/ kvit stripete div'en over for å teste det ut.
+            </p>
+            <br><br>
+            <h2>HTML-5 Canvas og SVG</h2>
+            <p>
+              Dette er to teknologier som kan brukes for å tegne grafikk på nettsider. Sjølv om dei har like mål har dei to ulike framgangsmåter for å gjøre dette.
+              SVG er basert på XML og alle delene av kunstverkene vil være objekter. I HTML5 Canvas derimot er det bare en container der alle pixlene blir tegnet på nettsiden.
+              Dersom man skal endre på kvert enkelt objekt i canvas er dette vanskeligere, ettersom man må kontrollere state feks. lagre objektene. I SVG er objektene DOM objekter, så man kan bruke feks. click handlers.
+              <br><br>
+              Eg valgte å bruke HTML5 canvas ettersom eg ønsket å manipulere mange objekter. Det er ikkje optimalt å ha mange objekter i SVG ettersom alle elementene er elementer i DOMen.
+            </p>
+            <br><br>
+            <h2>jQuery</h2>
+            <p>
+              Er ett bibilotek til Javascript som rett og slett gjør det enklere å bruke Javascript. Biblioteket
+              gir deg metoder som ville trengt mange linjer kode å skrive i Javscript. Med jQuery kan man blant annet gjøre Html/ Dom manipulering, css manipulering, effekta og animasjona med meir. Enda en fordel
+               med jQuery er at det fugerer med alle de store browserene.
+              På denne nettsiden har eg brukt jQuery til å legge til å forandre css atributtene til denne diven fra å være skjult til å bli vist.
+            </p>
+            <br><br>
+            <h2>Cross-browser-testing</h3>
+              <p>
+                Denne typen testing er viktig ettersom det ikkje er en standard på hvordan nettlesere implementeres.
+                Ulike nettlesere kan vise samme nettside på ulike måter og støtte ulyke typer teknologier. Eg har testa min nettleser i mozilla firefox og Chromium og sikre meg at nettsiden visest på samme måte.
+              </p>
+            <br><br>
+            <h2>Kilder</h2>
+            <a href = "https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+">Flex-Box</a><br>
+            <a href = "https://css-tricks.com/snippets/css/complete-guide-grid/
+">CSS-Grid</a><br>
+            <a href = "https://www.w3schools.com/graphics/svg_intro.asp">SVG</a><br>
+            <a href = "https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes
+">Canvas</a><br>
+            <a href = "https://css-tricks.com/using-requestanimationframe/
+">Request Animation Frame </a><br>
+            <a href = "https://www.digitalocean.com/community/tutorials/an-introduction-to-jquery
+            ">jQuery</a><br>
+            <a href ="https://developer.mozilla.org/bm/docs/Web/JavaScript/Guide">Javascript</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src = "js/work.js"></script>
+
+</body>
+</html>
+
+<!-- Flex box: Er en layout modul til css3 som gjør det enklere å lage layoutet til nettsiden.
+Deler opp layoutet i child og parent elementer, som du kan endre retning, størrelse og mer på.
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+<!-- Flex box: Er en layout modul til css3 som gjør det enklere å lage layoutet til nettsiden.
+Deler opp layoutet i child og parent elementer, som du kan endre retning, størrelse og mer på.
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+Flex-direction: Lar deg styre retningen på child elementene i parent.
+Justify-content: Styrer plasseringen til child elementer i parent.
+align-items: Er samme som justify-content men virker mot main aksen.(Flex-direction)
+
+
+CSS-grid: Er en enkel måte    for   forå lage 2D layouts til nettsidene dine.
+https://css-tricks.com/snippets/css/complete-guide-grid/
+
+CSS:
+Lar deg style html nettsider.
+
+.flex-direction{} er til klasser. <ul class = "flex-container"></ul>
+
+html5 <canvas id="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes
+" width="300" height="300"></canvas>
+
+For å gjøre den interaktiv brukte eg request animation frame
+https://css-tricks.com/using-requestanimationframe/
+
+Jquery er ett bibliotek til javscript requestanimationframe
+https://www.digitalocean.com/community/tutorials/an-introduction-to-jquery veldig bra ressurs
+
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
